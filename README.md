@@ -5,9 +5,13 @@ application that provides different graphical representations to show progress, 
 /dashboard
 │
 ├── index.php               # Master file of dashboard
+
 ├── config.php              # Configuration to MongoDB connection
+
 ├── assets/
+
 │   ├── css/
+
 │   │   └── styles.css      # File CSS for dashboard
 │   ├── js/
 │   │   └── scripts.js      # Script JavaScript for logic and visualization
