@@ -1,0 +1,122 @@
+/* Global and Body Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Exo 2', sans-serif;
+}
+
+body {
+    background: url('sci-fi-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #cfcfcf;
+    overflow-x: hidden;
+}
+
+.dashboard-container {
+    max-width: 100vw;
+    padding: 20px;
+    display: grid;
+    gap: 10px;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(145deg, #1b1b3f, #101024);
+    color: #00e5ff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 229, 255, 0.5);
+    text-shadow: 0 0 8px #00e5ff;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+header p {
+    font-size: 1.1em;
+}
+
+.glow-button {
+    background: linear-gradient(145deg, #00e5ff, #0d47a1);
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    cursor: pointer;
+    box-shadow: 0 0 12px #00e5ff;
+    transition: all 0.3s ease;
+}
+
+.glow-button:hover {
+    box-shadow: 0 0 15px #00e5ff, 0 0 25px #00e5ff;
+}
+
+/* Grid Layout */
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-rows: auto;
+    gap: 20px;
+}
+
+.card {
+    background-color: rgba(21, 22, 52, 0.85);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 0 15px rgba(0, 229, 255, 0.2);
+    padding: 15px;
+    color: #cfcfcf;
+    text-shadow: 0 0 3px #00e5ff;
+    animation: glow 2s infinite alternate;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    transition: transform 0.5s;
+}
+
+.card:hover {
+    transform: rotateY(10deg) rotateX(10deg);
+}
+
+.card h2 {
+    font-size: 1.2em;
+    color: #00e5ff;
+}
+
+.card canvas {
+    max-height: 150px;
+}
+
+/* Footer Section */
+footer {
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(145deg, #1b1b3f, #101024);
+    border-radius: 10px;
+    color: #00e5ff;
+    box-shadow: 0 0 15px rgba(0, 229, 255, 0.5);
+}
+
+footer h3 {
+    font-size: 1.5em;
+    color: #00e5ff;
+}
+
+footer p {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    .glow-button {
+        font-size: 0.8em;
+    }
+}

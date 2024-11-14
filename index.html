@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decision Intelligence Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard-container">
+        <header>
+            <h1>Decision Intelligence Dashboard</h1>
+            <p>Empowering Strategic Project Management with AI & Real-Time Data</p>
+            <button class="glow-button">Activate AI Insights</button>
+        </header>
+
+        <div class="grid-layout">
+            <!-- Overview and AI Recommendations -->
+            <div class="card overview-card">
+                <h2>Overview</h2>
+                <p>Active Projects: 10 | Total Tasks: 92 | Milestones: 103</p>
+            </div>
+            <div class="card recommendations-card">
+                <h2>AI Strategic Suggestions</h2>
+                <p>Resource Shift Recommended: <strong>20%</strong> from Project Nova to Project Athena for optimal impact.</p>
+                <button class="glow-button">Optimize Resources</button>
+            </div>
+
+            <!-- Project Health Status -->
+            <div class="card">
+                <h2>Health Status</h2>
+                <canvas id="healthChart"></canvas>
+            </div>
+
+            <!-- Project Progress -->
+            <div class="card">
+                <h2>Progress Overview</h2>
+                <canvas id="progressChart"></canvas>
+            </div>
+
+            <!-- Priority Levels -->
+            <div class="card">
+                <h2>Priority Levels</h2>
+                <canvas id="priorityChart"></canvas>
+            </div>
+
+            <!-- Comparative Analysis -->
+            <div class="card">
+                <h2>Comparative Analysis</h2>
+                <canvas id="comparisonChart"></canvas>
+            </div>
+
+            <!-- Resource Allocation -->
+            <div class="card">
+                <h2>Resource Allocation</h2>
+                <canvas id="resourceChart"></canvas>
+            </div>
+
+            <!-- New Risk Analysis Card -->
+            <div class="card">
+                <h2>Risk Analysis</h2>
+                <canvas id="riskChart"></canvas>
+            </div>
+        </div>
+
+        <!-- Footer Section for Additional Information -->
+        <footer>
+            <div class="footer-info">
+                <h3>Strategic Insights</h3>
+                <p>Ongoing monitoring for high-risk projects and resource balancing is advised. Consider AI-led reallocation strategies to streamline efficiency and reduce delays.</p>
+                <button class="glow-button">Generate Detailed Report</button>
+            </div>
+        </footer>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
